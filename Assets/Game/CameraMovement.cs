@@ -4,8 +4,14 @@ using UnityEngine;
 
 public class CameraMovement : MonoBehaviour
 {
-    public float moveSpeed = 5.0f; // Speed of camera movement
-    public float rotateSpeed = 100.0f; // Speed of camera rotation
+    float moveSpeed = 5.0f; // Speed of camera movement
+    float rotateSpeed = 100.0f; // Speed of camera rotation
+
+    void Start()
+    {
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
+    }
 
     void Update()
     {
@@ -38,7 +44,7 @@ public class CameraMovement : MonoBehaviour
         if (Input.GetKey(KeyCode.DownArrow))
             verticalRotation += 1;
 
-        Vector3 rotation = new Vector3(verticalRotation * rotateSpeed * Time.deltaTime, horizontalRotation * rotateSpeed * Time.deltaTime, 0);
+        Vector3 rotation = new Vector3(0, horizontalRotation * rotateSpeed * Time.deltaTime, 0);
         transform.Rotate(rotation);
     }
 }
