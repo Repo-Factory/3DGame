@@ -29,5 +29,7 @@ public class ChairView : MonoBehaviour
     {
         mainCamera.enabled = !mainCamera.enabled;
         pianoCamera.enabled = !pianoCamera.enabled;
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.None;
     }
 }
