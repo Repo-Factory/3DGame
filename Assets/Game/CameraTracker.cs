@@ -4,11 +4,16 @@ using UnityEngine;
 
 public class CameraTracker : MonoBehaviour
 {
-    public Transform cameraPosition;
-    public Transform cameraOrientation;
+    public Transform playerPosition;
+    public Transform playerOrientation;
+    public bool attachedToPlayer = true;
     void Update()
     {
-        this.transform.position = cameraPosition.position;
-        this.transform.rotation = cameraOrientation.rotation;
+        if (attachedToPlayer)
+        {
+            this.transform.position = playerPosition.position;
+            this.transform.rotation = playerOrientation.rotation;
+        }
     }
 }
+
