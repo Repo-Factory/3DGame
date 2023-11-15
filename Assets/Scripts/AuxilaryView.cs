@@ -22,7 +22,10 @@ public class AuxilaryView : MonoBehaviour
 
     private void OnMouseDown()
     {
-        togglePianoView();
+        if (mainCamera.enabled)
+        {
+            togglePianoView();
+        }
     }
 
     private void togglePianoView()
