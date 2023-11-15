@@ -2,11 +2,19 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+
+public enum State
+{ 
+    musicKeyPuzzle = 0,
+    binaryPuzzle = 1
+};
+
 public class Ouija : MonoBehaviour
 {
     public string answer = "";
-    public GameObject textObject;
     public Key key;
+    public GameObject textObject;
+    public State state = State.musicKeyPuzzle;
     private TextMeshPro text;
 
     // Start is called before the first frame update
@@ -30,10 +38,11 @@ public class Ouija : MonoBehaviour
 public class LetterClickHandler : MonoBehaviour
 {
     private Ouija ouija;
+    const string BLANK_STRING = "";
     const string ENTER_KEY = "Yes";
     const string CLEAR_KEY = "No";
-    const string CODE = "CSHARP";
-    const string BLANK_STRING = "";
+    const string FIRST_CODE = "CSHARP";
+    const string FINAL_CODE = "51192";
 
     public void SetOuija(Ouija ouija)
     {
@@ -60,9 +69,20 @@ public class LetterClickHandler : MonoBehaviour
 
     public void SubmitAnswer(string answer)
     {
-        if (answer == CODE)
+        if (answer == FIRST_CODE && ouija.state == State.musicKeyPuzzle)
         {
             ouija.key.Activate();
+            ouija.state = State.binaryPuzzle;
         }
+
+        if (answer == FINAL_CODE && ouija.state == State.binaryPuzzle)
+        {
+            CompleteLevel();
+        }
+    }
+
+    void CompleteLevel()
+    {
+        Debug.Log("You Won!");
     }
 }

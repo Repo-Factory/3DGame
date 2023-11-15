@@ -2179,8 +2179,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   answer: 
-  textObject: {fileID: 247411528}
   key: {fileID: 2130249781}
+  textObject: {fileID: 247411528}
+  state: 0
 --- !u!1 &225658060
 GameObject:
   m_ObjectHideFlags: 0
@@ -23840,7 +23841,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 1111101110101100111110111010110011111011101011001111101110101100111110111010110011111011101011001111101
+  m_text: 1111101110101100111110111010110011111011101011001111101110101100111110111010110011111011101011
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -23903,7 +23904,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 1.5051174, y: 2.0704286, z: 17.765247, w: 2.0169997}
+  m_margin: {x: 1.5051174, y: 2.0704286, z: 17.765247, w: 2.0970201}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   _SortingLayer: 0
