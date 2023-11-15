@@ -41,7 +41,7 @@ public class LetterClickHandler : MonoBehaviour
     const string BLANK_STRING = "";
     const string ENTER_KEY = "Yes";
     const string CLEAR_KEY = "No";
-    const string FIRST_CODE = "CSHARP";
+    const string FIRST_CODE = "CSHARPMINOR";
     const string FINAL_CODE = "51192";
 
     public void SetOuija(Ouija ouija)
