@@ -6,7 +6,9 @@ public class Ouija : MonoBehaviour
 {
     public string answer = "";
     public GameObject textObject;
+    public Key key;
     private TextMeshPro text;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -28,6 +30,10 @@ public class Ouija : MonoBehaviour
 public class LetterClickHandler : MonoBehaviour
 {
     private Ouija ouija;
+    const string ENTER_KEY = "Yes";
+    const string CLEAR_KEY = "No";
+    const string CODE = "CSHARP";
+    const string BLANK_STRING = "";
 
     public void SetOuija(Ouija ouija)
     {
@@ -38,24 +44,25 @@ public class LetterClickHandler : MonoBehaviour
     {
         string keyName = transform.name;
 
-        if (keyName == "Yes")
+        if (keyName == ENTER_KEY)
         {
             SubmitAnswer(ouija.answer);
         }
-        else if (keyName == "No")
+        else if (keyName == CLEAR_KEY)
         {
-            ouija.answer = "";
-            Debug.Log("Cleared Answer");
+            ouija.answer = BLANK_STRING;
         }
         else
         {
-            Debug.Log("Clicked On: " + keyName);
             ouija.answer = string.Concat(ouija.answer, keyName);
         }
     }
 
-    public void SubmitAnswer(string word)
+    public void SubmitAnswer(string answer)
     {
-        Debug.Log("Word is: " + word);
+        if (answer == CODE)
+        {
+            ouija.key.Activate();
+        }
     }
 }

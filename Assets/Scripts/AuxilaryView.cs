@@ -16,7 +16,7 @@ public class AuxilaryView : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Escape) && auxilaryCamera.enabled)
         {
-            togglePianoView();
+            toggleView();
         }
     }
 
@@ -24,11 +24,11 @@ public class AuxilaryView : MonoBehaviour
     {
         if (mainCamera.enabled)
         {
-            togglePianoView();
+            toggleView();
         }
     }
 
-    private void togglePianoView()
+    private void toggleView()
     {
         mainCamera.enabled = !mainCamera.enabled;
         auxilaryCamera.enabled = !auxilaryCamera.enabled;
