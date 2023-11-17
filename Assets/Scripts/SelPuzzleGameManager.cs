@@ -26,7 +26,7 @@ public class SelPuzzleGameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        sm = this.transform.parent.gameObject;//FindObjectOfType<SelPuzzleManager>();
+        sm = FindObjectOfType<SelPuzzleManager>();
         //temp
         startRound();
     }
