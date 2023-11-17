@@ -2,32 +2,31 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CardRiddleGameManager : MonoBehaviour
+public class SelPuzzleGameManager : MonoBehaviour
 {
     private static int riddleNum = 10;
-    private Card playedCard = null;
 
     public int lives = 3;
     public int points = 0;
-
     public int pointsToWin = 3;
+    public int curRiddleIndex = -1;
 
     public List<string> riddles = new List<string>(riddleNum);
     /*
      { "Who was murdered?", "Who burried their spouse alive?", 
-        "Who beheaded their subjects over white roses?",  "Who did King and his Court mock for eternity",
+        "Who beheaded their subjects over white roses?",  "Who did King and his court mock for eternity?",
         "Who was a resurrection man? - tenative", "King of hearts",
         "Queen of Spades", "Queen of Hearts",
         "Joker", "Jack of Spades" }
     */
+    public List<Selectable> solutionCards = new List<Selectable>(riddleNum);
 
-    public List<Card> solutionCards = new List<Card>(riddleNum);
-
-    public int curRiddleIndex = -1;
+    public SelPuzzleManager sm;
 
     // Start is called before the first frame update
     void Start()
     {
+        sm = this.transform.parent.gameObject;//FindObjectOfType<SelPuzzleManager>();
         //temp
         startRound();
     }
@@ -56,16 +55,17 @@ public class CardRiddleGameManager : MonoBehaviour
 
     public void startRound()
     {
-        curRiddleIndex = Random.Range(0, riddleNum - 1);
+        curRiddleIndex = Random.Range(0, riddles.Count - 1);
+        sm.Answers.Add(solutionCards[curRiddleIndex]);
         //display riddle
     }
 
-    public void checkSolution(Card card)
+    public void EvaluateRound(bool didWin)
     {
         if (curRiddleIndex >= 0)//insure riddle has be selected to check against
         {
-            playedCard = card;
-            if (Equals(card.getCardName(), solutionCards[curRiddleIndex].getCardName()))
+            //replace with 
+            if (didWin)//find sol so this is called and riddle evaled
             {
                 //correct guess
                 points++;
@@ -74,7 +74,6 @@ public class CardRiddleGameManager : MonoBehaviour
             {
                 //incorrect
                 lives--;
-
             }
             Invoke("resetRound", 2f);
         }
@@ -84,7 +83,7 @@ public class CardRiddleGameManager : MonoBehaviour
     {
         riddles.RemoveAt(curRiddleIndex);
         solutionCards.RemoveAt(curRiddleIndex);
-        playedCard.cardReset();
+        sm.resetPlayed();
         
         //reset riddle
         startRound();

@@ -3,51 +3,45 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class Card : MonoBehaviour
+public class Selectable : MonoBehaviour
 {
     [Header("Inscribed")]
 
     //Gameplay
     private Vector3 ogPos;
-    private Vector3 pos;
-    private Vector3 bouncePos;
-    private Vector3 playPos;
     private bool bounced = false;
     private bool isMouseOver = false;
 
-    private CardRiddleGameManager gm;
+    private SelPuzzleManager sm;
 
+    public Vector3 pos;
+    public Vector3 bounceVec;//vector to store the amount the object will bounce
+    public Vector3 bouncePos;
+    public Vector3 playPos;
     public float bounceHeight = 0.25f;
 
-    public string type;
-    public string suit;
-    public bool isPlayableCard = true;
+    public string selName;
+    public bool isSelectable = true;
     public bool faceUp = true;
+    public bool canPlay = true;
 
     void Start()
     {
         pos = this.transform.position;
-        bouncePos = pos;
+        bouncePos = pos + bounceVec;
         ogPos = pos;
-        playPos = pos;
 
-        bouncePos.y += bounceHeight;
-        bouncePos.z += bounceHeight;
+        sm = FindObjectOfType<SelPuzzleManager>();
+    }
 
-        playPos.x = 4f;
-        playPos.z = 6f;
-
-        gm = FindObjectOfType<CardRiddleGameManager>();
+    void Update()
+    {
+        //canPlay = gm.canPlay;
     }
 
     public bool wasMouseOver()
     {
         return isMouseOver;
-    }
-    
-    public string getCardName()
-    {
-        return (type + " " + suit);
     }
 
     public void move(Vector3 inMovePos)//make gradual
@@ -59,21 +53,21 @@ public class Card : MonoBehaviour
         bouncePos.z += bounceHeight;
     }
 
-    public void playCard()
+    public void play()
     {
-        //add card to played in gm
+        //add to played in gm
         //move up
         move(playPos);
         //set not playable
-        isPlayableCard = false;
+        isSelectable = false;
 
-        gm.checkSolution(this);
+        //gm.checkSolution(this);
     }
 
-    public void cardReset()
+    public void reset()
     {
         move(ogPos);
-        isPlayableCard = true;
+        isSelectable = true;
     }
 
     public void flip()//change this to be more gradual
@@ -93,18 +87,18 @@ public class Card : MonoBehaviour
 
     void OnMouseOver()
     {
-        if (isPlayableCard)
+        if (isSelectable)
         {
             //bounce on hover            
             this.transform.position = bouncePos;
             bounced = true;
 
-            isMouseOver = true;//needed????
+            isMouseOver = true;
             
             //play if clicked
-            if(Input.GetMouseButtonDown(0))
+            if(Input.GetMouseButtonDown(0) && sm.canPlay)
             {
-                playCard();
+                sm.addToPlayed(this);
             }
         }
         else
@@ -116,7 +110,7 @@ public class Card : MonoBehaviour
 
     void OnMouseExit()
     {
-        if (isPlayableCard)
+        if (isSelectable)
         {
             if (bounced)
             {
