@@ -48,27 +48,27 @@ public class SelPuzzleManager : MonoBehaviour
         if (Played.Count == Answers.Count)
         {
             canPlay = false;
-            bool wasSolved = checkSolution(Played[0], Answers[0]);
+            bool wasSolved = checkSolution(Played[0]);
             for (int i = 1; i < Played.Count; i++)
             {
-                wasSolved = wasSolved && checkSolution(Played[i], Answers[i]);
+                wasSolved = wasSolved && checkSolution(Played[i]);
             }
 
-            BroadcastMessage("EvaluateRound", wasSolved);//wont work exactly since need the solved to be false at some point
+            BroadcastMessage("EvaluateRound", wasSolved);
         }
     }
 
-    public bool checkSolution(Selectable selectable, Selectable answer)
+    public bool checkSolution(Selectable selectable)
     {
-        if (Equals(selectable.selName, answer.selName))
+        for (int i = 0; i < Answers.Count; i++)
         {
-            //correct guess
-            return true;
+            if (Equals(selectable.selName, Answers[i].selName))
+            {
+                //correct guess
+                return true;
+            }
         }
-        else
-        {
-            //incorrect
-            return false;
-        }
+
+        return false;
     }
 }
