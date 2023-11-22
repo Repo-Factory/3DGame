@@ -31,6 +31,7 @@ public class Selectable : MonoBehaviour
         bouncePos = pos + bounceVec;
         ogPos = pos;
         playPos = bouncePos;
+        selName = this.name;
 
         sm = FindObjectOfType<SelPuzzleManager>();
     }
