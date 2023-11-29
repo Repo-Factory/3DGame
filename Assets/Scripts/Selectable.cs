@@ -23,7 +23,6 @@ public class Selectable : MonoBehaviour
     public string selName;
     public bool isSelectable = true;
     public bool faceUp = true;
-    public bool canPlay = true;
 
     void Start()
     {
@@ -38,7 +37,7 @@ public class Selectable : MonoBehaviour
 
     void Update()
     {
-        //canPlay = gm.canPlay;
+        
     }
 
     public bool wasMouseOver()
