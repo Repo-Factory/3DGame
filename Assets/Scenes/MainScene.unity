@@ -178,6 +178,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6412314228257158017, guid: c6824d43d3b104043980de9884bebba0, type: 3}
+      propertyPath: m_text
+      value: ---------------------
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c6824d43d3b104043980de9884bebba0, type: 3}
 --- !u!1 &51955489
@@ -440,6 +444,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 270
       objectReference: {fileID: 0}
+    - target: {fileID: 6412314228257158017, guid: c6824d43d3b104043980de9884bebba0, type: 3}
+      propertyPath: m_text
+      value: ---------------------
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c6824d43d3b104043980de9884bebba0, type: 3}
 --- !u!1 &140409714
@@ -624,7 +632,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 179769561}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.097201616, y: 8.678213, z: -8.09}
+  m_LocalPosition: {x: 0, y: 7.2, z: -5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -640,6 +648,80 @@ Transform:
 Transform:
   m_CorrespondingSourceObject: {fileID: 5602666404419471102, guid: c6824d43d3b104043980de9884bebba0, type: 3}
   m_PrefabInstance: {fileID: 1133205032}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &203849685
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1570807055}
+    m_Modifications:
+    - target: {fileID: 5083292692683709508, guid: c6824d43d3b104043980de9884bebba0, type: 3}
+      propertyPath: m_Name
+      value: The Invisible Man
+      objectReference: {fileID: 0}
+    - target: {fileID: 5602666404419471102, guid: c6824d43d3b104043980de9884bebba0, type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5602666404419471102, guid: c6824d43d3b104043980de9884bebba0, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5602666404419471102, guid: c6824d43d3b104043980de9884bebba0, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5602666404419471102, guid: c6824d43d3b104043980de9884bebba0, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5602666404419471102, guid: c6824d43d3b104043980de9884bebba0, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5602666404419471102, guid: c6824d43d3b104043980de9884bebba0, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5602666404419471102, guid: c6824d43d3b104043980de9884bebba0, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5602666404419471102, guid: c6824d43d3b104043980de9884bebba0, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5602666404419471102, guid: c6824d43d3b104043980de9884bebba0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5602666404419471102, guid: c6824d43d3b104043980de9884bebba0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5602666404419471102, guid: c6824d43d3b104043980de9884bebba0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6412314228257158017, guid: c6824d43d3b104043980de9884bebba0, type: 3}
+      propertyPath: m_text
+      value: The Invisible Man
+      objectReference: {fileID: 0}
+    - target: {fileID: 6412314228257158017, guid: c6824d43d3b104043980de9884bebba0, type: 3}
+      propertyPath: m_fontSize
+      value: 1.07
+      objectReference: {fileID: 0}
+    - target: {fileID: 6412314228257158017, guid: c6824d43d3b104043980de9884bebba0, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 1.07
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c6824d43d3b104043980de9884bebba0, type: 3}
+--- !u!4 &203849686 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5602666404419471102, guid: c6824d43d3b104043980de9884bebba0, type: 3}
+  m_PrefabInstance: {fileID: 203849685}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &226033086
 GameObject:
@@ -686,7 +768,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5083292692683709508, guid: c6824d43d3b104043980de9884bebba0, type: 3}
       propertyPath: m_Name
-      value: Book Variant (3)
+      value: The King in Yellow
       objectReference: {fileID: 0}
     - target: {fileID: 5602666404419471102, guid: c6824d43d3b104043980de9884bebba0, type: 3}
       propertyPath: m_RootOrder
@@ -736,6 +818,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 270
       objectReference: {fileID: 0}
+    - target: {fileID: 6412314228257158017, guid: c6824d43d3b104043980de9884bebba0, type: 3}
+      propertyPath: m_text
+      value: The King in Yelliow
+      objectReference: {fileID: 0}
+    - target: {fileID: 6412314228257158017, guid: c6824d43d3b104043980de9884bebba0, type: 3}
+      propertyPath: m_fontSize
+      value: 1.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6412314228257158017, guid: c6824d43d3b104043980de9884bebba0, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 1.2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c6824d43d3b104043980de9884bebba0, type: 3}
 --- !u!1001 &246899726
@@ -747,7 +841,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5083292692683709508, guid: c6824d43d3b104043980de9884bebba0, type: 3}
       propertyPath: m_Name
-      value: Book Variant (4)
+      value: Animal Farm
       objectReference: {fileID: 0}
     - target: {fileID: 5602666404419471102, guid: c6824d43d3b104043980de9884bebba0, type: 3}
       propertyPath: m_RootOrder
@@ -801,6 +895,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
       objectReference: {fileID: 0}
+    - target: {fileID: 6412314228257158017, guid: c6824d43d3b104043980de9884bebba0, type: 3}
+      propertyPath: m_text
+      value: Animal Farm
+      objectReference: {fileID: 0}
+    - target: {fileID: 6412314228257158017, guid: c6824d43d3b104043980de9884bebba0, type: 3}
+      propertyPath: m_fontSize
+      value: 1.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6412314228257158017, guid: c6824d43d3b104043980de9884bebba0, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 1.4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c6824d43d3b104043980de9884bebba0, type: 3}
 --- !u!1 &326823959
@@ -813,7 +919,7 @@ GameObject:
   m_Component:
   - component: {fileID: 326823960}
   m_Layer: 0
-  m_Name: Shelf 4
+  m_Name: Shelf 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -827,7 +933,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 326823959}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.14, y: 6, z: 0}
+  m_LocalPosition: {x: 2.14, y: 10.489, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -839,7 +945,7 @@ Transform:
   - {fileID: 1625678497}
   - {fileID: 1623680402}
   m_Father: {fileID: 432863287}
-  m_RootOrder: 5
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &387205842
 PrefabInstance:
@@ -850,15 +956,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5083292692683709508, guid: c6824d43d3b104043980de9884bebba0, type: 3}
       propertyPath: m_Name
-      value: Book Variant (7)
+      value: Alice in Wonderland
       objectReference: {fileID: 0}
     - target: {fileID: 5602666404419471102, guid: c6824d43d3b104043980de9884bebba0, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 5602666404419471102, guid: c6824d43d3b104043980de9884bebba0, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.69000006
+      value: -5.1
       objectReference: {fileID: 0}
     - target: {fileID: 5602666404419471102, guid: c6824d43d3b104043980de9884bebba0, type: 3}
       propertyPath: m_LocalPosition.y
@@ -895,6 +1001,18 @@ PrefabInstance:
     - target: {fileID: 5602666404419471102, guid: c6824d43d3b104043980de9884bebba0, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6412314228257158017, guid: c6824d43d3b104043980de9884bebba0, type: 3}
+      propertyPath: m_text
+      value: Alice in Wonderland
+      objectReference: {fileID: 0}
+    - target: {fileID: 6412314228257158017, guid: c6824d43d3b104043980de9884bebba0, type: 3}
+      propertyPath: m_fontSize
+      value: 1.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6412314228257158017, guid: c6824d43d3b104043980de9884bebba0, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 1.2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c6824d43d3b104043980de9884bebba0, type: 3}
@@ -939,9 +1057,9 @@ Transform:
   - {fileID: 707306048}
   - {fileID: 2031089790}
   - {fileID: 1958150353}
-  - {fileID: 1570807055}
-  - {fileID: 1942499238}
   - {fileID: 326823960}
+  - {fileID: 1942499238}
+  - {fileID: 1570807055}
   - {fileID: 1537927539}
   - {fileID: 1219878021}
   - {fileID: 179769564}
@@ -1082,6 +1200,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 15
       objectReference: {fileID: 0}
+    - target: {fileID: 6412314228257158017, guid: c6824d43d3b104043980de9884bebba0, type: 3}
+      propertyPath: m_text
+      value: ---------------------
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c6824d43d3b104043980de9884bebba0, type: 3}
 --- !u!1001 &501543858
@@ -1093,7 +1215,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5083292692683709508, guid: c6824d43d3b104043980de9884bebba0, type: 3}
       propertyPath: m_Name
-      value: Book
+      value: Dracula
       objectReference: {fileID: 0}
     - target: {fileID: 5602666404419471102, guid: c6824d43d3b104043980de9884bebba0, type: 3}
       propertyPath: m_RootOrder
@@ -1138,6 +1260,18 @@ PrefabInstance:
     - target: {fileID: 5602666404419471102, guid: c6824d43d3b104043980de9884bebba0, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6412314228257158017, guid: c6824d43d3b104043980de9884bebba0, type: 3}
+      propertyPath: m_text
+      value: Dracula
+      objectReference: {fileID: 0}
+    - target: {fileID: 6412314228257158017, guid: c6824d43d3b104043980de9884bebba0, type: 3}
+      propertyPath: m_fontSize
+      value: 1.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6412314228257158017, guid: c6824d43d3b104043980de9884bebba0, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 1.4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c6824d43d3b104043980de9884bebba0, type: 3}
@@ -1539,6 +1673,10 @@ PrefabInstance:
     - target: {fileID: 5602666404419471102, guid: c6824d43d3b104043980de9884bebba0, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6412314228257158017, guid: c6824d43d3b104043980de9884bebba0, type: 3}
+      propertyPath: m_text
+      value: ---------------------
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c6824d43d3b104043980de9884bebba0, type: 3}
@@ -1945,15 +2083,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5083292692683709508, guid: c6824d43d3b104043980de9884bebba0, type: 3}
       propertyPath: m_Name
-      value: Book (1)
+      value: Lord of the Flies
       objectReference: {fileID: 0}
     - target: {fileID: 5602666404419471102, guid: c6824d43d3b104043980de9884bebba0, type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5602666404419471102, guid: c6824d43d3b104043980de9884bebba0, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5.1400003
+      value: -0.6900001
       objectReference: {fileID: 0}
     - target: {fileID: 5602666404419471102, guid: c6824d43d3b104043980de9884bebba0, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1990,6 +2128,20 @@ PrefabInstance:
     - target: {fileID: 5602666404419471102, guid: c6824d43d3b104043980de9884bebba0, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6412314228257158017, guid: c6824d43d3b104043980de9884bebba0, type: 3}
+      propertyPath: m_text
+      value: 'Lord of the Flies
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 6412314228257158017, guid: c6824d43d3b104043980de9884bebba0, type: 3}
+      propertyPath: m_fontSize
+      value: 1.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6412314228257158017, guid: c6824d43d3b104043980de9884bebba0, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 1.1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c6824d43d3b104043980de9884bebba0, type: 3}
@@ -2064,7 +2216,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5083292692683709508, guid: c6824d43d3b104043980de9884bebba0, type: 3}
       propertyPath: m_Name
-      value: Book Variant (11)
+      value: The Phantom of the Opera
       objectReference: {fileID: 0}
     - target: {fileID: 5602666404419471102, guid: c6824d43d3b104043980de9884bebba0, type: 3}
       propertyPath: m_RootOrder
@@ -2110,6 +2262,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6412314228257158017, guid: c6824d43d3b104043980de9884bebba0, type: 3}
+      propertyPath: m_text
+      value: 'The Phantom of the Opera
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 6412314228257158017, guid: c6824d43d3b104043980de9884bebba0, type: 3}
+      propertyPath: m_fontSize
+      value: 1.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6412314228257158017, guid: c6824d43d3b104043980de9884bebba0, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 1.1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c6824d43d3b104043980de9884bebba0, type: 3}
 --- !u!1001 &1133205032
@@ -2121,7 +2287,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5083292692683709508, guid: c6824d43d3b104043980de9884bebba0, type: 3}
       propertyPath: m_Name
-      value: Book Variant (10)
+      value: The Green Mile
       objectReference: {fileID: 0}
     - target: {fileID: 5602666404419471102, guid: c6824d43d3b104043980de9884bebba0, type: 3}
       propertyPath: m_RootOrder
@@ -2174,6 +2340,18 @@ PrefabInstance:
     - target: {fileID: 5602666404419471102, guid: c6824d43d3b104043980de9884bebba0, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 6412314228257158017, guid: c6824d43d3b104043980de9884bebba0, type: 3}
+      propertyPath: m_text
+      value: The Green Mile
+      objectReference: {fileID: 0}
+    - target: {fileID: 6412314228257158017, guid: c6824d43d3b104043980de9884bebba0, type: 3}
+      propertyPath: m_fontSize
+      value: 1.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6412314228257158017, guid: c6824d43d3b104043980de9884bebba0, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 1.2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c6824d43d3b104043980de9884bebba0, type: 3}
@@ -2339,6 +2517,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6412314228257158017, guid: c6824d43d3b104043980de9884bebba0, type: 3}
+      propertyPath: m_text
+      value: ---------------------
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c6824d43d3b104043980de9884bebba0, type: 3}
 --- !u!4 &1274945109 stripped
@@ -2422,6 +2604,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5602666404419471102, guid: c6824d43d3b104043980de9884bebba0, type: 3}
   m_PrefabInstance: {fileID: 240205605}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1300623079 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5809369474555121677, guid: c6824d43d3b104043980de9884bebba0, type: 3}
+  m_PrefabInstance: {fileID: 240205605}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 320253c87bf297948aa93165ad5222e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1312753868 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5602666404419471102, guid: c6824d43d3b104043980de9884bebba0, type: 3}
@@ -2485,6 +2678,10 @@ PrefabInstance:
     - target: {fileID: 5602666404419471102, guid: c6824d43d3b104043980de9884bebba0, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 270
+      objectReference: {fileID: 0}
+    - target: {fileID: 6412314228257158017, guid: c6824d43d3b104043980de9884bebba0, type: 3}
+      propertyPath: m_text
+      value: ---------------------
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c6824d43d3b104043980de9884bebba0, type: 3}
@@ -2801,7 +2998,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5083292692683709508, guid: c6824d43d3b104043980de9884bebba0, type: 3}
       propertyPath: m_Name
-      value: Book Variant (9)
+      value: 1984
       objectReference: {fileID: 0}
     - target: {fileID: 5602666404419471102, guid: c6824d43d3b104043980de9884bebba0, type: 3}
       propertyPath: m_RootOrder
@@ -2846,6 +3043,18 @@ PrefabInstance:
     - target: {fileID: 5602666404419471102, guid: c6824d43d3b104043980de9884bebba0, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6412314228257158017, guid: c6824d43d3b104043980de9884bebba0, type: 3}
+      propertyPath: m_text
+      value: 1984
+      objectReference: {fileID: 0}
+    - target: {fileID: 6412314228257158017, guid: c6824d43d3b104043980de9884bebba0, type: 3}
+      propertyPath: m_fontSize
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6412314228257158017, guid: c6824d43d3b104043980de9884bebba0, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 1.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c6824d43d3b104043980de9884bebba0, type: 3}
@@ -2911,7 +3120,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5083292692683709508, guid: c6824d43d3b104043980de9884bebba0, type: 3}
       propertyPath: m_Name
-      value: Book Variant
+      value: Frankenstein
       objectReference: {fileID: 0}
     - target: {fileID: 5602666404419471102, guid: c6824d43d3b104043980de9884bebba0, type: 3}
       propertyPath: m_RootOrder
@@ -2960,6 +3169,18 @@ PrefabInstance:
     - target: {fileID: 5602666404419471102, guid: c6824d43d3b104043980de9884bebba0, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 270
+      objectReference: {fileID: 0}
+    - target: {fileID: 6412314228257158017, guid: c6824d43d3b104043980de9884bebba0, type: 3}
+      propertyPath: m_text
+      value: Frankenstein
+      objectReference: {fileID: 0}
+    - target: {fileID: 6412314228257158017, guid: c6824d43d3b104043980de9884bebba0, type: 3}
+      propertyPath: m_fontSize
+      value: 1.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6412314228257158017, guid: c6824d43d3b104043980de9884bebba0, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 1.4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c6824d43d3b104043980de9884bebba0, type: 3}
@@ -3310,7 +3531,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1570807055}
   m_Layer: 0
-  m_Name: Shelf 2
+  m_Name: Shelf 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3324,7 +3545,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1570807054}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.82, y: 10.489, z: 0}
+  m_LocalPosition: {x: 1.82, y: 6, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -3333,9 +3554,10 @@ Transform:
   - {fileID: 1300623078}
   - {fileID: 1277168912}
   - {fileID: 702234694}
+  - {fileID: 203849686}
   - {fileID: 1192209048}
   m_Father: {fileID: 432863287}
-  m_RootOrder: 3
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1573528205 stripped
 Transform:
@@ -3600,6 +3822,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5602666404419471102, guid: c6824d43d3b104043980de9884bebba0, type: 3}
   m_PrefabInstance: {fileID: 387205842}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1703778760 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5809369474555121677, guid: c6824d43d3b104043980de9884bebba0, type: 3}
+  m_PrefabInstance: {fileID: 387205842}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 320253c87bf297948aa93165ad5222e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1851191071
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3609,7 +3842,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 3c06484256a9aed49ba17e02399e03a4, type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3c06484256a9aed49ba17e02399e03a4, type: 3}
       propertyPath: m_LocalScale.x
@@ -3678,7 +3911,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5083292692683709508, guid: c6824d43d3b104043980de9884bebba0, type: 3}
       propertyPath: m_Name
-      value: Book Variant (8)
+      value: And Then There Were None
       objectReference: {fileID: 0}
     - target: {fileID: 5602666404419471102, guid: c6824d43d3b104043980de9884bebba0, type: 3}
       propertyPath: m_RootOrder
@@ -3736,6 +3969,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 15
       objectReference: {fileID: 0}
+    - target: {fileID: 6412314228257158017, guid: c6824d43d3b104043980de9884bebba0, type: 3}
+      propertyPath: m_text
+      value: 'And Then There Were None
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 6412314228257158017, guid: c6824d43d3b104043980de9884bebba0, type: 3}
+      propertyPath: m_fontSize
+      value: 1.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6412314228257158017, guid: c6824d43d3b104043980de9884bebba0, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 1.1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c6824d43d3b104043980de9884bebba0, type: 3}
 --- !u!4 &1908159364 stripped
@@ -3778,7 +4025,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canPlay: 1
-  Answers: []
+  Answers:
+  - {fileID: 1703778760}
+  - {fileID: 1957362679}
+  - {fileID: 1300623079}
   Played: []
 --- !u!4 &1942216330
 Transform:
@@ -3819,17 +4069,17 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1942499237}
   m_LocalRotation: {x: -0, y: -0, z: 1, w: 0}
-  m_LocalPosition: {x: -1.88, y: 8.25, z: 0}
+  m_LocalPosition: {x: -2, y: 8.25, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1957362678}
-  - {fileID: 1703778759}
+  - {fileID: 1689673447}
   - {fileID: 848145121}
   - {fileID: 135630626}
   - {fileID: 1909736695}
   - {fileID: 196763728}
-  - {fileID: 1689673447}
+  - {fileID: 1703778759}
   - {fileID: 416812784}
   m_Father: {fileID: 432863287}
   m_RootOrder: 4
@@ -3843,7 +4093,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5083292692683709508, guid: c6824d43d3b104043980de9884bebba0, type: 3}
       propertyPath: m_Name
-      value: Book Variant (1)
+      value: The Tell Tale Heart
       objectReference: {fileID: 0}
     - target: {fileID: 5602666404419471102, guid: c6824d43d3b104043980de9884bebba0, type: 3}
       propertyPath: m_RootOrder
@@ -3889,6 +4139,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6412314228257158017, guid: c6824d43d3b104043980de9884bebba0, type: 3}
+      propertyPath: m_text
+      value: The Tell Tale Heart
+      objectReference: {fileID: 0}
+    - target: {fileID: 6412314228257158017, guid: c6824d43d3b104043980de9884bebba0, type: 3}
+      propertyPath: m_fontSize
+      value: 1.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6412314228257158017, guid: c6824d43d3b104043980de9884bebba0, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 1.3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c6824d43d3b104043980de9884bebba0, type: 3}
 --- !u!1001 &1952648358
@@ -3900,7 +4162,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5083292692683709508, guid: c6824d43d3b104043980de9884bebba0, type: 3}
       propertyPath: m_Name
-      value: Book Variant (2)
+      value: The Cask of Amontillado
       objectReference: {fileID: 0}
     - target: {fileID: 5602666404419471102, guid: c6824d43d3b104043980de9884bebba0, type: 3}
       propertyPath: m_RootOrder
@@ -3954,6 +4216,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 15
       objectReference: {fileID: 0}
+    - target: {fileID: 6412314228257158017, guid: c6824d43d3b104043980de9884bebba0, type: 3}
+      propertyPath: m_text
+      value: 'The Cask of Amontillado
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 6412314228257158017, guid: c6824d43d3b104043980de9884bebba0, type: 3}
+      propertyPath: m_fontSize
+      value: 1.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6412314228257158017, guid: c6824d43d3b104043980de9884bebba0, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 1.3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c6824d43d3b104043980de9884bebba0, type: 3}
 --- !u!4 &1957362678 stripped
@@ -3961,6 +4237,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5602666404419471102, guid: c6824d43d3b104043980de9884bebba0, type: 3}
   m_PrefabInstance: {fileID: 1121966371}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1957362679 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5809369474555121677, guid: c6824d43d3b104043980de9884bebba0, type: 3}
+  m_PrefabInstance: {fileID: 1121966371}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 320253c87bf297948aa93165ad5222e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1958150352
 GameObject:
   m_ObjectHideFlags: 0
@@ -4218,6 +4505,10 @@ PrefabInstance:
     - target: {fileID: 5602666404419471102, guid: c6824d43d3b104043980de9884bebba0, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6412314228257158017, guid: c6824d43d3b104043980de9884bebba0, type: 3}
+      propertyPath: m_text
+      value: ---------------------
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c6824d43d3b104043980de9884bebba0, type: 3}
