@@ -23,7 +23,7 @@ public class SelPuzzleGameManager : MonoBehaviour
     void Start()
     {
         sm = FindObjectOfType<SelPuzzleManager>();
-        //temp
+        
         startRound();
     }
 

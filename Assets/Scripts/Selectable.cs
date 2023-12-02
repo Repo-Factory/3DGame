@@ -49,9 +49,7 @@ public class Selectable : MonoBehaviour
     {
         this.transform.position = inMovePos;
         pos = inMovePos;
-        bouncePos = pos;
-        bouncePos.y += bounceHeight;
-        bouncePos.z += bounceHeight;
+        bouncePos = pos + bounceVec;
     }
 
     public void play()
