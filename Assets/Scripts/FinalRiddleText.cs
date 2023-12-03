@@ -1,18 +1,23 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class FinalRiddleText : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public string riddle;
+    public TextMeshPro FinalRiddle;
+
+    public static FinalRiddleText Instance;
+
+    private void Awake()
     {
-        
+        Instance = this;
+        DontDestroyOnLoad(gameObject);
     }
 
-    // Update is called once per frame
-    void Update()
+    public void setTextToRiddle()
     {
-        
+        FinalRiddle.text = riddle;
     }
 }
