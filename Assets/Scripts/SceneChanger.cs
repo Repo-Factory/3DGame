@@ -7,6 +7,7 @@ public class SceneChanger : MonoBehaviour
 {
     //this script will be attached to colliders of objects that will transition the player to different scenes
     //set the appropate scene with bools in unity
+    public bool toStart = false;
     public bool toMain = false;
     public bool toAudio = false;
     public bool toCard = false;
@@ -14,15 +15,24 @@ public class SceneChanger : MonoBehaviour
 
     void OnMouseDown()
     {
-        if (toMain)
+        changeScene();
+    }
+
+   public void changeScene()
+    {
+        if(toStart)
+        {
+            SceneManager.LoadScene("Start Screen");
+        }
+        else if (toMain)
         {
             SceneManager.LoadScene("MainScene");
         }
-        else if(toAudio)
+        else if (toAudio)
         {
             SceneManager.LoadScene("AudioScene");
         }
-        else if(toCard)
+        else if (toCard)
         {
             SceneManager.LoadScene("Card Riddle");
         }
@@ -30,5 +40,10 @@ public class SceneChanger : MonoBehaviour
         {
             SceneManager.LoadScene("EightQueensPuzzle");
         }
+    }
+
+    public void exitGame()
+    {
+        Application.Quit();
     }
 }

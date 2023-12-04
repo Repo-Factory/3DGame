@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class BookGameManager : MonoBehaviour
 {
@@ -21,6 +22,7 @@ public class BookGameManager : MonoBehaviour
         {
             //correct
             Debug.Log("Win");
+            SceneManager.LoadScene("Win Scene");
         }
         else
         {
