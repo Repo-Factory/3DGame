@@ -24607,6 +24607,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RadioWrapper
       objectReference: {fileID: 0}
+    - target: {fileID: 4057820910229457300, guid: ad5b28479333a2c42abf57aef25bcde2, type: 3}
+      propertyPath: Loop
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ad5b28479333a2c42abf57aef25bcde2, type: 3}
 --- !u!33 &4211648530377827853

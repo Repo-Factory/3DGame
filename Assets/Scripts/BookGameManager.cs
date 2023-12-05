@@ -21,13 +21,11 @@ public class BookGameManager : MonoBehaviour
         if (didWin)//find sol so this is called and riddle evaled
         {
             //correct
-            Debug.Log("Win");
-            SceneManager.LoadScene("Win Scene");
+            Invoke("loadEndScreen", 1f);
         }
         else
         {
             //incorrect
-            Debug.Log("Loss");
             sm.resetPlayed();
             startRound();
         }
@@ -40,5 +38,10 @@ public class BookGameManager : MonoBehaviour
         {
             sm.Answers.Add(Answers[i]);
         }
+    }
+
+    private void loadEndScreen()
+    {
+        SceneManager.LoadScene("Win Scene");
     }
 }

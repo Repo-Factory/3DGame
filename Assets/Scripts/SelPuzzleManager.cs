@@ -9,6 +9,11 @@ public class SelPuzzleManager : MonoBehaviour
     public List<Selectable> Answers = new List<Selectable>();
     public List<Selectable> Played = new List<Selectable>();
 
+    public AudioSource audioSource;
+    public AudioClip winPuzzle;
+    public AudioClip losePuzzle;
+    public float volume = 1f;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -52,6 +57,15 @@ public class SelPuzzleManager : MonoBehaviour
             for (int i = 1; i < Played.Count; i++)
             {
                 wasSolved = wasSolved && checkSolution(Played[i]);
+            }
+
+            if(wasSolved)
+            {
+                audioSource.PlayOneShot(winPuzzle, volume);
+            }
+            else
+            {
+                audioSource.PlayOneShot(losePuzzle, volume);
             }
 
             BroadcastMessage("EvaluateRound", wasSolved);
