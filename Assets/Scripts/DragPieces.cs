@@ -107,7 +107,7 @@ public class DragPieces : MonoBehaviour
                         InvalidateDiagonals(i, j);
                         queen[i].position[j]=true;
                         queens=queens-1;
-                        Debug.Log("Number of queens: " + queens);
+                        //Debug.Log("Number of queens: " + queens);
                 }
 
             }
