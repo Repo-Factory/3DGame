@@ -4,5 +4,23 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Start Screen.unity
+    guid: f56f8a61e360ceb4ab65a8bbe45e89fa
+  - enabled: 1
+    path: Assets/Scenes/MainScene.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/AudioScene.unity
+    guid: 36998e296abde554f9f3cc4ec2e6b17b
+  - enabled: 1
+    path: Assets/Scenes/Card Riddle.unity
+    guid: ef9b06584ff456c4584924a4bfd359aa
+  - enabled: 1
+    path: Assets/Scenes/EightQueensPuzzle.unity
+    guid: bca4c60f00f34184c92285041bb4bb9e
+  - enabled: 1
+    path: Assets/Scenes/Win Scene.unity
+    guid: 53d5ba8c10eedce48bd14c35bf1bb1a4
   m_configObjects: {}

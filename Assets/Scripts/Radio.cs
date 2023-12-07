@@ -7,6 +7,11 @@ public class Radio : MonoBehaviour
     public AudioSource audioSource;
     private bool isMuted = true;
 
+    void Start()
+    {
+        audioSource.Play();
+    }
+
     public void ToggleMute()
     {
         isMuted = !isMuted;
@@ -15,14 +20,8 @@ public class Radio : MonoBehaviour
 
     public void ToggleAudio(bool isMuted)
     {
-        if (isMuted)
-        {
-            audioSource.Stop();
-        }
-        else
-        {
-            audioSource.Play();
-        }
+
+        audioSource.mute = isMuted;
     }
 
     public void OnMouseDown()

@@ -24,6 +24,10 @@ public class Selectable : MonoBehaviour
     public bool isSelectable = true;
     public bool faceUp = true;
 
+    public AudioSource audioSource;
+    public AudioClip moveSound;
+    public float volume = 1f;
+
     void Start()
     {
         pos = this.transform.position;
@@ -49,9 +53,7 @@ public class Selectable : MonoBehaviour
     {
         this.transform.position = inMovePos;
         pos = inMovePos;
-        bouncePos = pos;
-        bouncePos.y += bounceHeight;
-        bouncePos.z += bounceHeight;
+        bouncePos = pos + bounceVec;
     }
 
     public void play()
@@ -93,6 +95,11 @@ public class Selectable : MonoBehaviour
             //bounce on hover            
             this.transform.position = bouncePos;
             bounced = true;
+
+            if(!isMouseOver)
+            {
+                audioSource.PlayOneShot(moveSound, volume);
+            }
 
             isMouseOver = true;
             

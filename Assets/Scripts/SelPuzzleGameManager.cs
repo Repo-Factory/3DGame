@@ -10,6 +10,8 @@ public class SelPuzzleGameManager : MonoBehaviour
     public int riddlesToSolve = 3;
     public int curRiddleIndex = -1;
 
+    public TextMeshPro comText;
+
     public List<string> riddles = new List<string>(riddleNum);
     public List<Selectable> solutionCards = new List<Selectable>(riddleNum);
     public List<TextMeshPro> riddlePlaces;
@@ -23,13 +25,8 @@ public class SelPuzzleGameManager : MonoBehaviour
     void Start()
     {
         sm = FindObjectOfType<SelPuzzleManager>();
-        //temp
-        startRound();
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
+        startRound();
     }
 
     public void startRound()
@@ -81,9 +78,7 @@ public class SelPuzzleGameManager : MonoBehaviour
             sm.Answers.Add(selectedSol[i]);
             //display riddle
             riddlePlaces[indexes[i]].text = riddles[i];
-            Debug.Log("Text Index: " + indexes[i]);
         }
-
     }
 
     public void EvaluateRound(bool didWin)
@@ -94,14 +89,16 @@ public class SelPuzzleGameManager : MonoBehaviour
             if (didWin)//find sol so this is called and riddle evaled
             {
                 //correct
-                Debug.Log("Win");
+                comText.text = "Look Up";
+                BroadcastMessage("setTextToRiddle");
             }
             else
             {
                 //incorrect
-                Debug.Log("Loss");
+                comText.text = "Wrong";
+
+                Invoke("resetRound", 2f);
             }
-            Invoke("resetRound", 2f);
         }
     }
 
@@ -110,7 +107,9 @@ public class SelPuzzleGameManager : MonoBehaviour
         //reset selriddles and sel cards list
         
         sm.resetPlayed();
-        
+
+        comText.text = "Select those accused";
+
         //reset riddle
         startRound();
     }
