@@ -77,7 +77,7 @@ public class SelPuzzleGameManager : MonoBehaviour
         {
             sm.Answers.Add(selectedSol[i]);
             //display riddle
-            riddlePlaces[indexes[i]].text = riddles[i];
+            riddlePlaces[indexes[i]].text = selectedRiddles[i];
         }
     }
 

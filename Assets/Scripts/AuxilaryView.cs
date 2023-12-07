@@ -12,6 +12,7 @@ public class AuxilaryView : MonoBehaviour
     private void Start()
     {
         auxilaryCamera.enabled = false;
+        mainCamera.enabled = true;
     }
 
     void Update()
