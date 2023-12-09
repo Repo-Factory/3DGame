@@ -4,6 +4,11 @@ using UnityEngine;
 public class MenuButton : MonoBehaviour
 {
     public GameObject Menu;
+    void Awake()
+    {
+        Time.timeScale = 1;
+    }
+
     public void enableMenu()
     {
         Menu.gameObject.SetActive(true);

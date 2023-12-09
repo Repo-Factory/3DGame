@@ -22,7 +22,6 @@ public class Selectable : MonoBehaviour
 
     public string selName;
     public bool isSelectable = true;
-    public bool faceUp = true;
 
     public AudioSource audioSource;
     public AudioClip moveSound;
@@ -39,17 +38,12 @@ public class Selectable : MonoBehaviour
         sm = FindObjectOfType<SelPuzzleManager>();
     }
 
-    void Update()
-    {
-        
-    }
-
     public bool wasMouseOver()
     {
         return isMouseOver;
     }
 
-    public void move(Vector3 inMovePos)//make gradual
+    public void move(Vector3 inMovePos)
     {
         this.transform.position = inMovePos;
         pos = inMovePos;
@@ -58,13 +52,10 @@ public class Selectable : MonoBehaviour
 
     public void play()
     {
-        //add to played in gm
         //move up
         move(playPos);
         //set not playable
         isSelectable = false;
-
-        //gm.checkSolution(this);
     }
 
     public void reset()
@@ -73,24 +64,9 @@ public class Selectable : MonoBehaviour
         isSelectable = true;
     }
 
-    public void flip()//change this to be more gradual
-    {
-        if (faceUp)
-        {
-            this.transform.RotateAround(transform.position, Vector3.up, 180);
-            
-        }
-        else
-        {
-            this.transform.RotateAround(transform.position, Vector3.up, -180);
-            
-        }
-        faceUp = !faceUp;
-    }
-
     void OnMouseOver()
     {
-        if (isSelectable)
+        if (isSelectable && Time.timeScale == 1)//added time conditional to prevent player interaction during pause
         {
             //bounce on hover            
             this.transform.position = bouncePos;

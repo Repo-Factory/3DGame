@@ -25,11 +25,14 @@ public class AuxilaryView : MonoBehaviour
 
     public void toggleView()
     {
-        mainCamera.enabled = !mainCamera.enabled;
-        auxilaryCamera.enabled = !auxilaryCamera.enabled;
-        Cursor.visible = true;
-        Cursor.lockState = CursorLockMode.None;
-        
-        viewCollider.gameObject.SetActive(mainCamera.enabled);
+        if (Time.timeScale == 1)//added to prevent player interaction during pause
+        {
+            mainCamera.enabled = !mainCamera.enabled;
+            auxilaryCamera.enabled = !auxilaryCamera.enabled;
+            Cursor.visible = true;
+            Cursor.lockState = CursorLockMode.None;
+
+            viewCollider.gameObject.SetActive(mainCamera.enabled);
+        }
     }
 }
