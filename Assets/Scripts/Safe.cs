@@ -5,6 +5,7 @@ using UnityEngine;
 public class Safe : MonoBehaviour
 {
     bool safeOpen = false;
+    public AudioSource openEffect;
     public Key key;
     public GameObject safeDoor;
     public GameObject binaryPaper;
@@ -23,6 +24,7 @@ public class Safe : MonoBehaviour
         if (key.pickedUp)
         {
             OpenSafe();
+            openEffect.Play();
         }
 
         if (safeOpen)
