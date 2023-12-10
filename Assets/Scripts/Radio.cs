@@ -5,11 +5,15 @@ using UnityEngine;
 public class Radio : MonoBehaviour
 {
     public AudioSource audioSource;
+    public bool playOnLoad = true;
     private bool isMuted = true;
 
     void Start()
     {
-        audioSource.Play();
+    	if (playOnLoad)
+    	{
+    	     audioSource.Play();
+    	}
     }
 
     public void ToggleMute()
@@ -20,7 +24,6 @@ public class Radio : MonoBehaviour
 
     public void ToggleAudio(bool isMuted)
     {
-
         audioSource.mute = isMuted;
     }
 
