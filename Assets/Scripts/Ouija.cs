@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public enum State
 { 
@@ -56,6 +57,7 @@ public class LetterClickHandler : MonoBehaviour
         if (keyName == ENTER_KEY)
         {
             SubmitAnswer(ouija.answer);
+            ouija.answer = BLANK_STRING;
         }
         else if (keyName == CLEAR_KEY)
         {
@@ -83,6 +85,6 @@ public class LetterClickHandler : MonoBehaviour
 
     void CompleteLevel()
     {
-        Debug.Log("You Won!");
+        SceneManager.LoadScene("AudioCutscene");
     }
 }
