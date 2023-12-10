@@ -2226,7 +2226,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   answer: 
   key: {fileID: 2130249781}
-  note: {fileID: 1525324276}
+  note: {fileID: 1525324278}
   textObject: {fileID: 247411528}
   state: 0
 --- !u!1 &225658060
@@ -18795,6 +18795,7 @@ GameObject:
   - component: {fileID: 1525324273}
   - component: {fileID: 1525324276}
   - component: {fileID: 1525324277}
+  - component: {fileID: 1525324278}
   m_Layer: 0
   m_Name: BinaryPaper
   m_TagString: Untagged
@@ -18893,7 +18894,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6de7b86d25a0af7d0865f3eed1d86f9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  notePrefab: {fileID: 1525324271}
 --- !u!82 &1525324277
 AudioSource:
   m_ObjectHideFlags: 0
@@ -18990,6 +18990,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1525324278
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1525324271}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33ad5b021e9e4f7d88b9ed817f3f0eb8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  notePrefab: {fileID: 1525324271}
 --- !u!1 &1530387873
 GameObject:
   m_ObjectHideFlags: 0
