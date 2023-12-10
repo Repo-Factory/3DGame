@@ -10,9 +10,10 @@ public class Radio : MonoBehaviour
 
     void Start()
     {
-    	if (playOnLoad)
+        audioSource.Play();
+    	if (!playOnLoad)
     	{
-    	     audioSource.Play();
+    	    audioSource.Pause();
     	}
     }
 
@@ -24,7 +25,14 @@ public class Radio : MonoBehaviour
 
     public void ToggleAudio(bool isMuted)
     {
-        audioSource.mute = isMuted;
+        if (isMuted)
+        {
+             audioSource.Pause();
+        }
+        else
+        {
+             audioSource.UnPause();
+        }
     }
 
     public void OnMouseDown()
