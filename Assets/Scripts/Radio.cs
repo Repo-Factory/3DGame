@@ -5,6 +5,7 @@ using UnityEngine;
 public class Radio : MonoBehaviour
 {
     public AudioSource audioSource;
+    public AudioSource backgroundMusic = null;
     public bool playOnLoad = true;
     private bool isMuted = true;
 
@@ -28,11 +29,20 @@ public class Radio : MonoBehaviour
         if (isMuted)
         {
              audioSource.Pause();
+             if (backgroundMusic != null)
+             {
+                 backgroundMusic.UnPause();
+       	     }
         }
         else
         {
              audioSource.UnPause();
+             if (backgroundMusic != null)
+             {
+                 backgroundMusic.Pause();
+       	     }
         }
+        
     }
 
     public void OnMouseDown()
