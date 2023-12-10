@@ -14,6 +14,7 @@ public class Ouija : MonoBehaviour
 {
     public string answer = "";
     public Key key;
+    public Note note;
     public GameObject textObject;
     public State state = State.musicKeyPuzzle;
     private TextMeshPro text;
@@ -85,6 +86,6 @@ public class LetterClickHandler : MonoBehaviour
 
     void CompleteLevel()
     {
-        SceneManager.LoadScene("AudioCutscene");
+        ouija.note.Activate();
     }
 }
