@@ -108,7 +108,7 @@ public class SelPuzzleGameManager : MonoBehaviour
         
         sm.resetPlayed();
 
-        comText.text = "Select those accused";
+        comText.text = "The three accused has changed\nSelect those accused";
 
         //reset riddle
         startRound();
