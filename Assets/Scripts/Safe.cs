@@ -21,7 +21,7 @@ public class Safe : MonoBehaviour
 
     private void OnMouseDown()
     {
-        if (key.pickedUp)
+        if (key.pickedUp && !safeOpen)
         {
             OpenSafe();
             openEffect.Play();
