@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 public class DragPieces : MonoBehaviour
 {
+    public AudioClip clip;
     public GameObject clueText;
     private int queens=8;
 
@@ -25,6 +26,7 @@ public class DragPieces : MonoBehaviour
     private float snapSensitivity=0.2f;
     GameObject objectSelected =null;
     void Start(){
+        AudioSource audio = GetComponent<AudioSource>();
         for(int i=0; i<8; i++){
             for(int j=0; j<8; j++){
                 points[i].snapPoints[j]=true; //initializes all boolean values to true
@@ -49,6 +51,8 @@ public class DragPieces : MonoBehaviour
             DropObject();
         }
         if(queens<=0){
+            queens=10;
+            GetComponent<AudioSource>().Play();
             clueText.SetActive(true);
         }
     }
